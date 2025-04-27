@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="eel.js"></script>
+        <script>
+            function callPython() {
+                eel.hello()
+            }
+        </script>
+        <script>
+            function addText(text) {
+                var div = document.getElementById("content");
+                div.innerHTML += "<br>" + text;
+            }
+            eel.expose(addText);
+        </script>
+    </head>
+    <body>
+        <h1>Hello World!</h1>
+        <button onclick="callPython()">Click Me!</button>
+        <p>Text will appear here:</p>
+        <div id="content"></div>
+    </body>
+</html>
