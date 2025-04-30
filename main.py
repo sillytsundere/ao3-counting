@@ -11,7 +11,11 @@ workid = AO3.utils.workid_from_url(url)
 print(f"Work ID: {workid}")
 work = AO3.Work(workid)
 print(f"Chapters: {work.nchapters}")
-print(f"Work title: {work.title}")
+print(f"Work Chapters?: {work.chapters.work}")
+# title = work[7:-1]
+# print(f"Title: {title}")
+# print(f"chapter 1 title: {work.chapters[0].text}")
+print(len(work.chapters[0].text.split(" ")))
 
 
 eel.init("www")
