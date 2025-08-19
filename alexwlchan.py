@@ -1,0 +1,24 @@
+# Use the alexwlchan/ao3 library
+import AO3
+# work = ao3.Work(52884502)
+
+# work = api.work(id='52884502')
+
+url = "https://archiveofourown.org/works/52884502"
+# workid = AO3.utils.workid_from_url(url)
+workid = "52884502"
+print(f"Work ID: {workid}")
+work = AO3.Work(workid)
+# print(f"Chapters: {work.nchapters}")
+# print(f"Work Chapters?: {work.chapters.work}")
+title = work.title
+print(f"Title: {title}")
+author = work.author
+print(f"Author: {author}")
+summary = work.summary
+print(f"Summary: {summary}")
+words = work.words
+print(f"Words: {words}")
+# print(f"chapter 1 title: {work.nchapters}")
+data = work.json()
+# print(f"Work: {data}")
