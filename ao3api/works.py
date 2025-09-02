@@ -204,6 +204,7 @@ class Work(object):
         """The number of words in this work."""
         return int(self._lookup_stat('words', 0).replace(',',''))
     
+    # added property to Work object to fetch number of chapters
     @property
     def chapters(self):
         """The number of chapters in this work. Returned as a string in the format from AO3. 'Posted/Total'."""
@@ -300,7 +301,7 @@ class Work(object):
             'stats': {
                 'published': str(self.published),
                 'words': self.words,
-                'chapters': self.chapters,
+                'chapters': self.chapters, #added chapters to stats dict in json object
                 'comments': self.comments,
                 'kudos': self.kudos,
                 'bookmarks': self.bookmarks,
