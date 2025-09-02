@@ -1,4 +1,5 @@
 # -*- encoding: utf-8
+# originally written by alexwlchan found at https://github.com/alexwlchan/ao3
 
 from datetime import datetime
 import collections

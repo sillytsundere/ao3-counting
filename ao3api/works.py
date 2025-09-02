@@ -1,4 +1,5 @@
 # -*- encoding: utf-8
+# originally written by alexwlchan found at https://github.com/alexwlchan/ao3
 
 from datetime import datetime
 import json
@@ -204,7 +205,7 @@ class Work(object):
         """The number of words in this work."""
         return int(self._lookup_stat('words', 0).replace(',',''))
     
-    # added property to Work object to fetch number of chapters
+    # sillytsundere added property to Work object to fetch number of chapters 8/31/2025
     @property
     def chapters(self):
         """The number of chapters in this work. Returned as a string in the format from AO3. 'Posted/Total'."""
@@ -212,7 +213,7 @@ class Work(object):
         value = str(value) if value is not None else '0/0'
         return value
 
-    # maybe fetch chapter titles if the desire seizes me
+    # sillytsundere maybe fetch chapter titles if the desire seizes me
 
     @property
     def comments(self):

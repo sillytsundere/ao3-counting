@@ -1,4 +1,5 @@
 # -*- encoding: utf-8
+# originally written by alexwlchan found at https://github.com/alexwlchan/ao3
 
 import requests
 from . import utils_api

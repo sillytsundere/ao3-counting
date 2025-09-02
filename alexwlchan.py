@@ -10,7 +10,7 @@ print("AO3 API imported!")
 # testing
 url = "https://archiveofourown.org/works/66427039"
 # workid = AO3.utils.workid_from_url(url)
-workid = "66427039"
+workid = "56370340"
 print(f"Work ID: {workid}")
 work = Work(workid)
 
@@ -32,5 +32,5 @@ print(f"Words: {words:,}")
 # posted_num = int(posted[0])
 # print(f"Type of posted: {type(posted_num)}")
 # print(f"Chapters posted: {chapters['posted']}")
-# data = work.json()
-# print(f"Work: {data}")
+data = work.json()
+print(f"Work: {data}")
