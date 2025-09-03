@@ -1,7 +1,5 @@
 from ao3api.works import Work
 
-print("AO3 API imported!")
-
 # work = ao3.Work(52884502)
 
 # work = api.work(id='52884502')
@@ -23,9 +21,9 @@ print(f"Author: {author}")
 words = work.words
 print(f"Words: {words:,}")
 
-# chapters = work.chapters
-# print(f"Type of chapters: {type(chapters)}")
-# print(f"Chapters: {chapters}")
+chapters = work.chapters
+print(f"Type of chapters: {type(chapters)}")
+print(f"Chapters: {chapters}")
 # posted = chapters.strip().split('/')
 # print(f"chapters split list: {posted}")
 # print(f"{posted[0]}")
@@ -33,4 +31,4 @@ print(f"Words: {words:,}")
 # print(f"Type of posted: {type(posted_num)}")
 # print(f"Chapters posted: {chapters['posted']}")
 data = work.json()
-print(f"Work: {data}")
+# print(f"Work: {data}")
